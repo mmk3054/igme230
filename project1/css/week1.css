@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    background-image: url("../css/marble.jpg");
+}
+
+div.container {
+
+    width: 250px;
+    min-height: 250px;
+    background:#f8f2fc;
+    margin: 40px auto 0 auto;
+    padding: 10px;
+     box-shadow: 3px 3px 2px 3px #d5d4d6;
+
+}
+
+div.container2 {
+
+    width: 250px;
+    min-height: 250px;
+    background: #f8f2fc;
+    margin: 40px auto 0 auto;
+    padding: 10px;
+    box-shadow: 3px 3px 2px 3px #d5d4d6;
+    
+}
+
+img.image {
+    
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+h1 {
+    font-family:"Arial";
+    font-size: 18pt;
+    color: #33144c;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em
+   
+    
+}
+h2 {
+    font-family:"Arial";
+    font-size: 10pt;
+    color: #33144c;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em
+   
+    
+}
+h3{
+   font-family:"Arial";
+    font-size: 10pt;
+    color: #33144c;
+    margin-right: auto;
+    width: 8em 
+}
+
