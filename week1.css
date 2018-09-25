@@ -79,7 +79,7 @@ h3{
     width: 8em 
 }
 /* these are for all the unspecified links, they will display them in 2 columns with 800 pixals between them*/
-ul{
+a{
     list-style:inside;
     column-count: 2;
     width:200px;
