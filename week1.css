@@ -1,8 +1,15 @@
+/*this is putting zero pixles around the margin of the body text
+This is also setting the marbled image as the background image */
 body {
     margin: 0;
     background-image: url("marble.jpg");
 }
-
+/* this is the container that hold the image and name
+I am setting the container to a width and setting a minimum hight to consotantly
+keep a hieght no matter the width of your screen 
+the margins are set to 40 pixals for top and auto is for left and right..this is for the space on the outside of the container
+The padding is set to 10 and is for the space on the inside
+box shadow creaes the drop shadow with diffrent properties to create the gradiant */
 div.container {
 
     width: 250px;
@@ -13,7 +20,8 @@ div.container {
      box-shadow: 3px 3px 2px 3px #d5d4d6;
 
 }
-
+/*This is for the 2nd container that contains the exercise and project links
+It has the same properties as the first container*/
 div.container2 {
 
     width: 250px;
@@ -24,7 +32,10 @@ div.container2 {
     box-shadow: 3px 3px 2px 3px #d5d4d6;
     
 }
-
+/*This is for the image I display initially on the screen
+The border radius creates the circle instead of the square
+the width hieght and margins are all the same structure as the contairs where it effects the space on the outside of the object
+display block starts the image on a new line and it will take up the whole width of the block */
 img.image {
     
     border-radius: 50%;
@@ -36,7 +47,8 @@ img.image {
     margin-right: auto;
 
 }
-
+/* h1 is the first header the font size is goiven and size the margin left and right are the area outside of the item
+the em value is set and now it is a multiple of that value so the text is 8 times the size of the initial font value*/
 h1 {
     font-family:"Arial";
     font-size: 18pt;
@@ -47,6 +59,7 @@ h1 {
    
     
 }
+/* h2 is the second header and follows the same properties as the first header*/
 h2 {
     font-family:"Arial";
     font-size: 10pt;
@@ -57,6 +70,7 @@ h2 {
    
     
 }
+/* Same thing for h3*/
 h3{
    font-family:"Arial";
     font-size: 10pt;
@@ -64,9 +78,10 @@ h3{
     margin-right: auto;
     width: 8em 
 }
-a{
+/* these are for all the unspecified links, they will display them in 2 columns with 800 pixals between them*/
+ul{
     list-style:inside;
     column-count: 2;
-    width:300px;
+    width:800px;
 }
 
