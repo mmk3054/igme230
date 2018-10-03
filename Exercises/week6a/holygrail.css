@@ -57,4 +57,18 @@ article, nav, aside {
     flex: 0 0 12rem;
     flex: 1
 }
+@media screen and (max-width: 36rem){ 
+    main{
+        flex-direction: column;
+        width: 100vw;
+    }
+    #wrapper{
+        max-width: none; 
+    }
+    article, nav, aside{
+        order: 0;
+        flex: 1;
+        margin: .5rem 0;
+    }
+}
 
