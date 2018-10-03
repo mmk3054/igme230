@@ -51,5 +51,8 @@ article, nav, aside {
     background-color: #fff;
     margin: .5rem;
     padding: .5rem;
+    order: -1;
+    flex: 0 0 12rem;
+    flex: 1
 }
 
