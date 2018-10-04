@@ -41,12 +41,10 @@ main{
     align-self: center;
     max-width:95vw;
     margin: .5rem 0;
-
- 
 }
 img{
     display: block;
     width:100%;
-    border: 2px, solid black;
+    border: 2px solid black;
     border-radius: 5px;
 }
