@@ -41,7 +41,16 @@
 </div>
 
 <script>
-/* Write your code here! */
+ //1 - select the first p element
+ let colorGroup  = document.querySelector("radio");
+
+// 1 - assign a function expression as the value for the selected element
+colorGroup.onclick = function (e) {
+	
+	// 2 - use the keyword 'this' to reference the object that triggered the event
+	this.red = "red";
+}
+
 </script>
 </body>
 </html>
