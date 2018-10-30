@@ -28,28 +28,25 @@
         </ol>
     
       </main>
-    
+      //write a for loop so that values from the sports & foods array creates a new list 
+      //add content to the list and insert it in the DOM element
+      //use the appendChild() method to add it to the #sportsList
+
     <script>
         "use strict";
-        let sports = ["Buffalo Bills", "Sabers", "Calv's"]; // add some colors
+        let sports = ["Buffalo Bills", "Sabers", "Calv's"]; // add some sports
         let foods = ["Chicken Wings", "Salad", "Cheese"]; // add some foods
         
-        function createList(listElement,array){
-    // you write the rest
-
-    //write a for loop so that values from the sports & foods array creates a new list 
-    //add content to the list and insert it in the DOM element
-    //use the appendChild() method to add it to the #sportsList
-
-    
+        function createList(sportsList,sports){
+  
     for(let sports of sports){
         let newListItem = document.createElement("li");
         newListItem.innerHTML = sports;
-        //creating variable for that list
-        let orderedList = document.querySelector("#sportsList");
-        //append a child to this list we are appending the new list iteam we made
-        orderedList.appendChild(newListItem);
+        let orderedList = document.querySelector("#sportsList"); //creating variable for that list
+        orderedList.appendChild(newListItem);//append a child to this list we are appending the new list iteam we made
     }
+
+
 
         //now how do we abstract this?
         //which array are we getting stuff from and which array is it coming from? 
@@ -58,8 +55,7 @@
         //we will pass in 2 values, arrays and list, we need to define those lists as variables 
         //let orderedColorsList = element document query 
         //how do we go from a for loop and ubstract those values to pass in 
-
-    //for(let item of array)   
+        //for(let item of array)   
 
         }
 
