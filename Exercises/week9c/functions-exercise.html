@@ -6,9 +6,23 @@
     <title>Week 9 Homework</title>
     <style>
         @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i');
-       html { font-family: Lato; font-size: 16px; }
-       main { max-width: 800px; margin: 0 auto; border: 1px dotted black; padding: 0 10px;} h1 { font-weight: 900;}
-   </style>
+
+        html {
+            font-family: Lato;
+            font-size: 16px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            border: 1px dotted black;
+            padding: 0 10px;
+        }
+
+        h1 {
+            font-weight: 900;
+        }
+    </style>
 
 </head>
 
@@ -16,41 +30,49 @@
     <main>
         <h1>My Favorites</h1>
         <h2>My Favorite Sports Teams</h2>
-    
+
         <ol id="sportsList">
-    
+
         </ol>
-    
+
         <h2>My Favorite Foods</h2>
-    
+
         <ol id="foodsList">
-    
+
         </ol>
-    
-      </main>
+
+    </main>
 
 
     <script>
-      //write a for loop so that values from the sports & foods array creates a new list 
-      //add content to the list and insert it in the DOM element
-      //use the appendChild() method to add it to the #sportsList
+        //write a for loop so that values from the sports & foods array creates a new list 
+        //add content to the list and insert it in the DOM element
+        //use the appendChild() method to add it to the #sportsList
 
         "use strict";
         let sports = ["Buffalo Bills", "Sabers", "Calv's"]; // add some sports
         let foods = ["Chicken Wings", "Salad", "Cheese"]; // add some foods
-        
-        function createList(sportsList,sports){
-  
-    for(let sport of sports){
-        let newListItem = document.createElement("li");
-        newListItem.innerHTML = sport;
-        let orderedList = document.querySelector("#sportsList"); //creating variable for that list
-        orderedList.appendChild(newListItem);//append a child to this list we are appending the new list iteam we made
-    }
+
+        function createList(tagOfElement, itemsInList) {
+            // get a dom reference to the list
+            let orderedList = document.querySelector(tagOfElement);
+
+            // loop through the items passed in
+            for (let item of itemsInList) {
+
+                // create the new list item and append it to the list
+                let newListItem = document.createElement("li");
+                newListItem.innerHTML = item;
+                orderedList.appendChild(newListItem); //append a child to this list we are appending the new list iteam we made
+            }
         }
 
+        createList("#sportsList", sports)
+        createList("#foodsList", foods)
+
+
     </script>
-    
+
 </body>
 
 </html>
