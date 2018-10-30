@@ -44,13 +44,40 @@
  //1 - select the first p element
  let colorGroup  = document.querySelector("radio");
 
+
 // 1 - assign a function expression as the value for the selected element
 colorGroup.onclick = function (e) {
 	
 	// 2 - use the keyword 'this' to reference the object that triggered the event
 	this.red = "red";
-}
 
+	let response = document.querySelector("#info");
+	let legend = document.querySelector("color form legend");
+	let submit = document.querySelector("color form button");
+	let buttons = document.querySelector('input[name="colorGroup"]');
+
+for (let buttons of buttons.addEventListener){
+
+}
+let color = document.querySelector('input[name ="colorGroup"]:checked').value;
+
+}
+//how to select the radio buttons? 
+//Forms rreadings, something ties these buttons them togehter (only one can be selected)
+//what Html attribute = name 
+//they must share the same name 
+//if you select colorGroup (attribute selecters hotel exercise, only)
+//Attribute selector document.querySelectAll('input[name = "colorGroup"]') gets us just the list iteams we want
+//document.querySelectAll('input[name = "colorGroup"]') could just do input because it is the only input 
+//select all buttons array
+//array for response document.querySelectAll #info
+//use a for loop to loop through array of buttons, add listener event, then have that listener change the inner html info by putting in the value of the iteam you selected 
+//let response legend submit buttons = document query selectot (#info color form legend colorformbutton input[name=colorGroup])
+
+//for (let buttond of buttondbuttond.addEventListener)
+
+//let colot = document.querySelector('input[name ="colorGroup"]:checked').value;
+//response.innerHtml = your final anser is $color
 </script>
 </body>
 </html>

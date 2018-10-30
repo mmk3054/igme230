@@ -36,8 +36,32 @@
         
         function createList(listElement,array){
     // you write the rest
-    for(i = 0; i < sports.length; i++){
-        sports[i];
+
+    //write a for loop so that values from the sports & foods array creates a new list 
+    //add content to the list and insert it in the DOM element
+    //use the appendChild() method to add it to the #sportsList
+
+    
+    for(/*let color of colors*/){
+        let newListItem = document.createElement("li");
+        newListItem.innerHTML = sports;
+//creating variable for that list
+        let orderedList = document.querySelector("#sportsList");
+        //append a child to this list we are appending the new list iteam we made
+        orderedList.appendChild(newListItem);
+
+
+        //now how do we abstract this?
+        //which array are we getting stuff from and which array is it coming from? 
+        //one is using sports array and sports list, if we write a function those are the two things we pass through
+        //if we pass those in we have those to work with them, we dont have to define those if we pass them in
+        //we will pass in 2 values, arrays and list, we need to define those lists as variables 
+        //let orderedColorsList = element document query 
+        //how do we go from a for loop and ubstract those values to pass in 
+
+    for(/*let item of array*/){
+
+    }    
     }
 }
     </script>
