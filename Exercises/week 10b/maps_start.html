@@ -31,10 +31,18 @@
         // create a new map with the specified options (uses deprecated getElementByID; could use querySelector instead)
         var myMap = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
         var myMarker = new google.maps.Marker({
+        var contentString = '<div id="content"><h2 id="firstHeading" class="firstHeading">I Did It!</h2><p>This is my very own custom info window.</p></div>';
+        var myInfoWindow = new google.maps.InfoWindow({
+         content: contentString
+          });
+          myMarker.addListener('click', function() {
+          myInfowindow.open(myMap, myMarker);
+          });
         position: latlng,
+        icon: "baseline-directions_walk-24px.svg",
         map: myMap
+});
     });
-      });
 
     } else {  // alternate content if the browser couldn't get position (old browser, or user refused)
       var para = document.createElement('p');
