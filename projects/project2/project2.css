@@ -52,8 +52,11 @@ a:-webkit-any-link {
     
 }
 a:hover { 
-  color: black;
-  font-weight: 700;
+    color:rgb(244, 66, 75);
+    font-weight: 900;
+  font-weight: bolder;
+  text-decoration-line: underline;
+
 }
 /*
 Not sure what this does yet
@@ -71,11 +74,10 @@ Not sure what this does yet
     font-weight: 900;
     font-size: 36;
     max-width: 100%;
-    margin-right: 0%;
+    margin-left: 5%;
     padding-bottom: 0px;
     padding-top: 0px;
     width: 40%;
-    flex: 1 1 0%;
     box-sizing: border-box;
     display: flex;
     font-style: italic;
@@ -90,12 +92,12 @@ Not sure what this does yet
 
 }
 .welcome{
-    color:black;
+    color:rgb(244, 66, 75);
     font-family: 'Open Sans', sans-serif;
     font-size: 24px;
     line-height: 28px;
     text-align: center;
-    font-weight: 900;
+    font-weight: bold;
 }
 .subhead{
     color: rgb(153, 153, 153);
@@ -113,7 +115,52 @@ Not sure what this does yet
     box-sizing: border-box;
 
 }
-img.phones{
-    max-width: 50%;
+.box1{
+    clear: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    width: calc(100% - 0px);
+    display: block;
+    float: left;
+    position: relative;
+    background: transparent;
+    box-sizing: border-box;
 }
+.cover-image-wrap{
+    padding-top: 50px;
+    float: left;
+    width: 60%;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+}
+.cover-image{
+    border-radius: 0px;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+    display: block;
 
+}
+.cover-normal{
+    left: 0;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 0px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    min-height: 100%;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+}
