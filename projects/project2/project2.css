@@ -1,90 +1,74 @@
-/*Project 2*/
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-* {
+
+.site-header{
+    align-items:center;
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    padding-bottom: 0px;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 30px;
+    border-bottom: 5px solid rgb(242, 242, 242);
+   /* display: flex;
+    position: relative;
+    box-sizing: border-box;*/
+}
+nav{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: right;
+    float: right;
+    width:30%;
+    text-decoration: none;
+    display:flex;
+    position: relative;
     box-sizing: border-box;
-}
-
-html {
-    margin: 0;
-    font-size: 16px;
-    font-family: Raleway, Helvetica, Arial, sans-serif;
-}
-
-header,
-footer {
-    background-color: lightgray;
-    display: flex;
-    justify-content: center;
-    padding: 1em;
-}
-body {
-    background: #F0F0F0;
-    margin: 0;
-    text-align: center;
-}
-
-img {
-    border: 2px solid black;
-    border-radius: 5px;
-}
-#icons {
-    width: 300px;
-    display: flex;
+    padding: 10px;
     justify-content: space-around;
-    align-items: center;
+    
+}
+/*
+not relevant when youre not transitioning
+.link-transition a{
+    transition: background 0.2s ease, color 0.2s ease;
+    transition-property: color;
+    transition-duration: 0.2s,  0.2s;
+    transition-timing-function: ease, ease;
+    transition-delay: initial, initial; 
+    text-decoration: none;
+    background: transparent;
+    box-sizing: border-box;
+    font-weight: 700;
+}
+*/
+
+a:-webkit-any-link {
+    color: #999999;
+    cursor: auto;
+    text-decoration:none;
+    font-weight: 400;
+    
+}
+a:hover { 
+  color: black;
+  font-weight: 700;
+}
+/*
+Not sure what this does yet
+.site-header::after, .logo-wrap::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+*/
+.logo-wrap{
+    color:rgb(244, 66, 75);
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 24;
+    text-align: center;
+    display: flex;
 }
 
-@supports (display: grid) {
-    .warning {
-        display: none;
-    }
-}
-
-main {
-    /* set up grid:
-       - rows are implicitly defined by content
-       - browser will create as many 250px columns as it can, 
-         and will stretch columns to use up additional space (1-249px) */
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    /* add space between rows and columns */
-    grid-gap: .5rem;
-    /* set the main element to be centered in the flex column */
-    align-self: center;
-    /* keep gallery from going to edge of viewport */
-    max-width: 95vw;
-    /* provide space between main and the header and footer */
-    margin: 1rem 0;
-
-    animation: entrance .5s linear both;
-
-
-}
-@keyframes entrance{
-    from{transform: translateX(-2000px);}
-    to {transform: translateY(0px);}
-    }
-    main div:nth-child(1) {
-        animation: entrance 2s linear both;
-        }
-    main div:nth-child(2) {
-            animation: entrance 1.5s linear both;
-            }        
-    main div:nth-child(3) {
-        animation: entrance 1s linear both;
-        }
-    main div:nth-child(4) {
-            animation: entrance .5s linear both;
-            }
-
-    main img { transition: all .2s ease-in-out; }
-    main img:hover { transform: scale(1.2); }
-
-    @keyframes spin{
-        0%{transform:rotate(0 turn); }
-        100%{transform: rotateY(360deg);}
-    }
-    a:hover .fa { 
-        color: #ccc;
-        animation: spin .5s linear both;
-        }
