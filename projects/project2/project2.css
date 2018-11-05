@@ -8,9 +8,6 @@
     padding-right: 0%;
     padding-top: 30px;
     border-bottom: 5px solid rgb(242, 242, 242);
-   /* display: flex;
-    position: relative;
-    box-sizing: border-box;*/
 }
 nav{
     font-family: 'Open Sans', sans-serif;
@@ -29,20 +26,7 @@ nav{
     justify-content: space-around;
     
 }
-/*
-not relevant when youre not transitioning
-.link-transition a{
-    transition: background 0.2s ease, color 0.2s ease;
-    transition-property: color;
-    transition-duration: 0.2s,  0.2s;
-    transition-timing-function: ease, ease;
-    transition-delay: initial, initial; 
-    text-decoration: none;
-    background: transparent;
-    box-sizing: border-box;
-    font-weight: 700;
-}
-*/
+
 
 a:-webkit-any-link {
     color: #999999;
@@ -58,15 +42,7 @@ a:hover {
   
 
 }
-/*
-Not sure what this does yet
-.site-header::after, .logo-wrap::after {
-    clear: both;
-    content: "";
-    display: table;
-}
-*/
-/*need to figure out why it is not center*/
+
 .logo-wrap{
     font-family: 'Open Sans', sans-serif;
     align-content: center;
@@ -171,88 +147,53 @@ img:hover {
 
 }
 
-
-/*
-.box1{
-    padding-top: 50px;
-    clear: left;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 20px;
-    margin-top: 0px;
-    width: calc(100% - 0px);
-    display: block;
-    float: left;
-    position: relative;
-    background: transparent;
-    box-sizing: border-box;
-}
-.cover-image-wrap{
-    float: left;
-    width: 49%;
-    height: 400px;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
-    position: relative;
-    box-sizing: border-box;
-    display: block;
+    background-color: transparent;
 }
-.cover-image{
-    border-radius: 0px;
-    width: 100%;
-    background-position: center, center;
-    background-size: cover;
-    height: 100%;
-    position: relative;
-    box-sizing: border-box;
-    display: block;
 
+li {
+    float: left;
 }
-/*
 
-.details{
- 
-    background:blue;
-    opacity: .1; 
-    padding-top: 50px;
-    float: right;
-    padding-bottom: 0%;
-    padding-top: 0%;
-    width: 49%;
-    position: relative;
-    height: 400px;
-    box-sizing: border-box;
-    display: block;
-
-}
-.details-inner{
-    padding-top: 50px;
-    top: 50%;
-    left: 0;
-    position: absolute;
-    width: 100%;
-    padding-bottom: 6%;
-    padding-left: 8%;
-    padding-right: 8%;
-    padding-top: 6%;
-    overflow: hidden;
-    box-sizing: border-box;
-    display: block; 
-}
-.title1{
-    color: #191919;
-    float: none;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 24px;
-    font-weight: normal;
-    font-weight: 500;
-    line-height: 24px;
-    margin: auto;
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
     text-align: center;
-    width: 100%;
- 
+    padding: 16px 10px;
+    text-decoration: none;
 }
-.phone{
-height: 100%;
-width: 50%;
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: rgba(244, 66, 75, 0.021);
 }
-*/
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
