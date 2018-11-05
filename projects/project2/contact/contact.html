@@ -10,10 +10,22 @@
     
         <img src="image.JPG" class="image">
         <h1>Kenzie Karwas</h1>
-        <div class="container"></div>
+        <div class="container">
+            <div>
+                Write a message <input type="text" id="nameField">
+            </div>
+        </div>
     </div>
     
 
 </body>
+<script>
+    const storedName = localStorage.getItem(nameKey);
+    if (storedName) {
+        nameField.value = storedName;
+    } else {
+        nameField.value = "Hello"; // a default value if `nameField` is not found
+    }
+</script>
 
 </html>
