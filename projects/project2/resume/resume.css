@@ -1,1 +1,87 @@
+.title{
+    color:rgb(244, 66, 75);
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    position: absolute;
+    font-style: italic;
+    left: 46%;
+}
 
+.container{
+    width: 400px;
+    margin: 0 auto;
+}
+
+a.print{
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    width: 75px;
+    margin: 20px auto;
+    background:   rgb(244, 66, 75);
+    text-align: center;
+    color: #fff;
+    padding: 3px 6px;
+    border-radius: 3px;
+    align-items: center;
+    position: absolute;
+    left: 48%;
+    top: 100px;
+  
+}
+
+a.print:hover{
+    background: linear-gradient(rgb(244, 66, 75),rgb(247, 121, 129));
+}
+.resume{
+    max-width: 700px;
+    margin: auto;
+    padding-top: 120px;
+  
+  }
+  
+  body {
+    color:grey;
+      min-width: 700px;
+
+  }
+  title {
+    margin-left: 3%;
+  }
+
+  .stuff {
+    display: inline-block;
+    margin-top: 2px;
+    margin-left: 55px;
+    width: 75%;
+    height: 1000px;
+  }
+  .head{
+    color:rgb(244, 66, 75);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+  }
+  p,li,ul{
+    color:grey;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 10px;
+    padding: 2px;
+  }
+
+  
+  @media only screen and (max-width: 430px) {
+    .left,
+    .right {
+      display: none;
+    }
+    .stuff {
+      width: 100%;
+      margin-left: 10px;
+    }
+  }
