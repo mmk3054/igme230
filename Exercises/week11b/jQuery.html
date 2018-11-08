@@ -11,7 +11,9 @@
         background-color: pink;
         height: 200px;
         width: 200px;
+        position: absolute;
     }
+  
 
     </style>
 </head>
@@ -26,11 +28,11 @@
     </div>
     <script>
        $("#hide").click(function(){
-            $("p").hide();
+            $("#navpanel").hide(1500);
         });
 
      $("#show").click(function(){
-             $("p").show();
+             $("#navpanel").show(1500); //number of milaseconds that it will take to execute 
         });
         </script>
 </body>
