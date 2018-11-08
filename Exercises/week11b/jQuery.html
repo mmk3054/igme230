@@ -9,21 +9,29 @@
     <style>
     #navpanel{
         background-color: pink;
-        height: 200;
-        width: 200;
+        height: 200px;
+        width: 200px;
     }
 
     </style>
 </head>
 <body>
-    <button id ="show">Show</button> <button id="hi">Hi</button>
-    <div id="navpanel"></div>
+    <button id ="show">Show</button> <button id="hide">Hide</button>
+    <div id="navpanel">
         <ul>
             <li>Link 1</li>
             <li>Link 2</li>
             <li>Link 3</li>
         </ul>
     </div>
-    
+    <script>
+       $("#hide").click(function(){
+            $("p").hide();
+        });
+
+     $("#show").click(function(){
+             $("p").show();
+        });
+        </script>
 </body>
 </html>
