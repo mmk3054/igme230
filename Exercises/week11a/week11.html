@@ -6,9 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Grid</title>
     <style>
+        html, body{
+            margin: 0;
+            padding: 0;
+        }
         #mygrid{
             display:grid;
-            grid-template-rows: 200px 200px 200px; /*makes 3 rows*/
+            grid-template-rows: 1fr 1fr 1fr;/* use fractions now it takes up whole space 200px 200px 200px makes 3 rows*/
             grid-template-columns: 200px 200px 200px;
 
         }
@@ -16,20 +20,27 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            background-color: blueviolet;
+            border: 1px dotted black;
+            width:100vw; /*use 100 virtical width units for width*/
+            height: 100vw;
         }
+        .headerbar{
+            grid-column-start:1; /*one refers to the lines not the columns 1 to -1 will span the entire thing*/
+
+        }
+
     </style>
 </head>
 <body>
     <div id="myid">
-        <div class="headbar">Cell 1</div>
+        <div class="headerbar">Cell 1</div>
         <div>Cell 2</div>
         <div>Cell 3</div>
         <div>Cell 4</div>
         <div>Cell 5</div>
         <div>Cell 6</div>
         <div>Cell 7</div>
-        <div>Cell 8</div>
-        <div>Cell 9</div>
     </div>
     
 </body>
