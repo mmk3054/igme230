@@ -115,6 +115,7 @@
         const gridHeight= (numRows * (cellSize +1)) -1;
         const gridWidth = (numCols * (cellSize +1)) -1;
 
+
         let pixelGrid = document.querySelector("#pixelGrid");
 
         pixelGrid.style.gridTemplateRows= `repeat(${numRows}, ${cellSize}px)`;
@@ -130,6 +131,17 @@
         for(let i = 0; i < numCells; i++){
             $("#pixelGrid").append('<span class="cell"></span>'); //$ says this is jQuery now...You are grabbing form pixal Grind...what are you appending?
         }
+
+     let color = $( "colorChooser" ).val();
+
+        $("colorChooser").change(function () { 
+            color = $(this).val();  
+            console.log(color);  
+});
+
+         $("colorChooser").click(function () { 
+         $(this).css("background-color", color);
+});
     </script>
 </body>
 
