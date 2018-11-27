@@ -68,8 +68,7 @@
                 <option value="verse2">Verse 2</option>
                 <option value="verse3">Verse 3</option>
                 <option value="verse4">Verse 4</option>
-                <option value="verse5">Verse 5</option>
-                <option value="verse6">Verse 6</option>
+     
             </select>
         </form>
 
@@ -80,17 +79,17 @@
 
     </div>
     <script>
-        let poem = "poem.txt";
+        let mypoem = "mypoem.txt";
 
         let verse = "verse1"; // sets default verse element
-        let verseString = (poem + " #" + verse);
+        let verseString = (mypoem + " #" + verse);
         $("#verse-choose").val(verse); // changes menu option to default
         $("#selectedverse").load(verseString);   // retrieves only default element
 
 
         $("#verse-choose").change(function() {
         verse = $(this).val();
-        verseString = (poem + " #" + verse);
+        verseString = (mypoem + " #" + verse);
         $("#selectedverse").load(verseString); 
 });
     </script>
