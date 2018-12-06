@@ -1,0 +1,108 @@
+/*****************
+General Formatting
+******************/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    /* sets base font size for rem sizing */
+    font-size: 16px;
+    font-family: Calibri, Helvetica, Arial, sans-serif;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+article,
+aside {
+    padding: .5rem;
+    
+}
+
+#extracredit {
+    width: 75%;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+}
+footer {
+    background-color: #86af49;
+}
+
+
+/**************
+Your Formatting
+***************/
+
+
+
+#mygrid{
+    display: grid;
+    display: grid;
+    height: 100vh;
+    grid-template-areas: "header" "nav" "article"  "aside" "footer";
+    grid-template-rows: 75px 30px auto auto 30px;
+    grid-template-columns: auto auto auto auto auto ;
+  
+}
+header {
+    grid-area: header;
+    background-color: #97af8c
+}
+
+nav {
+    grid-area: nav;
+    background-color: #bccfb3
+    
+}
+article {
+    grid-area: article;
+    background-color: #619e46;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #97af8c;
+}
+
+footer {
+    grid-area: footer
+}
+.submenu{
+display: none;
+padding: 10px;
+}
+@media screen and (min-width: 1000px){ 
+    #mygrid {
+    justify-content: center;
+        width:90%;
+        min-height: 100%;
+        grid-template-areas: "header header" /*first row*/
+        "article nav" /*secondrow*/
+        "article aside"/*third row*/
+        "footer footer";/*fourth row*/
+        grid-template-rows: 75px 50pxauto 50px ;   /* defines relative height of three rows */
+        grid-template-columns: 500px 500px;   /* defines width of the three columns */
+    }
+}
+.top{
+    
+    width:6rem;
+    background-color:#ccc;
+    margin: 2px;
+    list-style-type: none;
+    align-items: center;
+}
+   
+
+}
+.list{
+    background-color:#ddd;  
+    list-style-type: none;
+    padding-left: .25rem;
+   }
