@@ -14,7 +14,7 @@
     margin: 0 auto;
 }
 
-a.print{
+.button{
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     display: inline-block;
@@ -32,7 +32,7 @@ a.print{
   
 }
 
-a.print:hover{
+.button:hover{
     background: linear-gradient(rgb(244, 66, 75),rgb(247, 121, 129));
 }
 .resume{
@@ -90,3 +90,14 @@ a.print:hover{
       margin-left: 10px;
     }
   }
+*/
+  .button{
+	border: 1px solid;
+	padding: 1.5;
+	background: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	
+  }*/
