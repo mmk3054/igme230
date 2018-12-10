@@ -1,30 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Kenzie Karwas</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="notes.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGME-230 Fall 2018 Practical</title>
+    <link rel="stylesheet" href="notes.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
+    <div id="wrapper">
+        <header>
+            <h1>Liz Lawley</h1>
+        </header>
 
-  <h1>Notes</h1>
-  <p>Source information for any images or code that you didn't create yourself (including CSS frameworks, typefaces, and any code libraries)</p>
-  <h2> Description of any particularly challenging aspects of the design and how you dealt with them.</h2> 
-      <ul>
-   <li> I had a tough time trying to put my logo in the top left corner next to my name.</li>
-   <li>I had a tough time trying to get the font to change color when you hover over the box</li>
-   <li></li>
-    </ul>
-   <h2> If you used a template or framework, explain how you modified it so that your portfolio has a unique look and feel.</h2>
-   <ul>
-       <li>I used a templete I created in the design doc but I was having a tough time getting the images to line up so I had them decending one at a time</li>
-   </ul>
-   <h2> Anything that goes beyond the base expectations for the project--what did you do that was particularly challenging? This could involve art/design, content, or code.</h2>
-       <ul>
-           <li>Note to self-Continue updating</li>
-       </ul>
-    
+        <nav>
+        </nav>
+
+        <article>
+            <h2 id="content">Project notes</h2>
+            
+            </article>
+
+        <aside>
+        </aside>
+
+        <footer>
+            <p>&lt;footer&gt; element - add your own content</p>
+        </footer>
+    </div>
+
+    <script >
+$(".menuitem").click(function() {
+    $(this).next('.submenu').slideToggle('slow');
+});
+
+//radio button 
+'use strict';
+let verse = ("content1.txt")  // sets default verse element
+
+$(".choose-content").val(verse); // changes menu option to default
+$("#content").load(verse);   // retrieves only default element
+
+
+$("#choose-content").click(function() { //on change, when a new menu item is selected do this
+verse = ("content2.txt"); //the verse which is my variable for the content information is set to the new value of the selected menu item.
+    
+$("#content").load(verse); //upload the new verse and replace the old one
+});
+
+
+$("#choose-contentn").click(function() { //on change, when a new menu item is selected do this
+verse = ("content1.txt") //the verse which is my variable for the content information is set to the new value of the selected menu item.
+    
+$("#content").load(verse); //upload the new verse and replace the old one
+});
+    </script>
 
 </body>
 
