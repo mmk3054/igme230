@@ -1,0 +1,220 @@
+
+body{
+    padding: 0;
+    margin: 0;
+}
+.container {
+    width: 100vw;
+    height: 100%;
+    background: white;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+  }
+
+.mygrid{
+    display:grid;
+    width: 100%;
+    max-width: 1500px;
+    min-height: 100%;
+    height:100%;
+    grid-template-areas:"titlebar" "sidebar" "scrolling-container";
+    grid-template-rows: 100px  auto;
+    grid-template-columns: 0% 0% auto;
+}
+@media screen and (min-width: 700px){ 
+    .mygrid {
+    justify-content: center;
+        width:100%;
+        min-height: 100%;
+        grid-template-areas: "sidebar-top titlebar " /*first row*/
+        "sidebar scrolling-container scrolling-container" /*secondrow*/
+        "sidebar scrolling-container scrolling-container" /*third row*/
+        "sidebar scrolling-container scrolling-container" ;/*fourth row*/
+        grid-template-rows: 100px auto auto auto auto ;   /* defines relative height of three rows */
+        grid-template-columns: 155px auto auto;   /* defines width of the three columns */
+      
+    }
+}
+.box{
+    max-width:100%;
+    max-height: 100%;
+    display: flex;
+    grid-row: 1/3;
+    background-color: pink;  
+}
+.content {
+   width:100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+
+  }
+  
+  .sidebar {
+    grid-row: 1/7;
+    display: flex;
+    flex-direction: column;
+    background-color:#ffeff2;
+    position: relative;
+    z-index: 1;
+   
+ 
+  }
+
+  .scrolling-container {
+    grid-column: 2/4;
+    grid-row: 2/7;
+    overflow: scroll;
+    background-color: #ffe6e6;
+   
+  }
+  .sidebar-top {
+    width: 100%;
+    display: flex;
+    min-height: 100px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .sidebar-bottom {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .sidebar-links img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  max-height: 40%;
+  max-width: 40%;
+  justify-content: center;
+    
+  }
+
+  .sidebar-links {
+    padding: 10px;
+    margin: 10px;
+    display: grid;
+    grid-template-areas: "space" "work" "resume" "notes" "contact";
+    grid-template-rows:   150px 150px 150px 150px 150px;
+    
+  }
+
+  .sidebar-links a {
+    display: block;
+    color: #ef2651;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  .sidebar-links a:hover{
+    color: blueviolet;
+  }
+  
+  
+  .titlebar {
+    font-family: 'Assistant', sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    width: 100%;
+    background-image: linear-gradient(#ffe6e6, white);
+    grid-column: 2/span 3;
+    padding: 0 0.5em;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    display: grid;
+    grid-template-rows: 100px;
+    grid-template-columns: 50px 1fr 50px;
+    filter: drop-shadow(6px 6px 6px #ef2651);
+    z-index: 1;
+  }
+  
+  
+  .photo{
+    width: 100%;
+    display: flex;
+    position:relative;
+  }
+  .photo img{  
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto auto;
+    width: 100%;
+    height: 100%;
+  }
+
+  .logo img{
+    width: 70%;
+    height:70%;
+    display: flex;
+    
+  }
+.name{
+  display: flex;
+  color: #ef2651;
+  font-size: 3em;
+  height:100%;
+  width: 100%;
+  grid-column:2/2;
+}
+.title2{
+  height:100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+}
+.content{
+    height:100%;
+    width: 100%;
+    grid-row: 3/5;
+    background-color:#051934;
+    float:right;
+  }
+  .content video{
+    height:100%;
+    width: 100%;
+    grid-row: 3/5;
+    display: flex;
+    float:right;
+}
+video::-webkit-media-controls {
+    display:none !important;
+}
+.words{
+    color:darkgray;
+    text-align: center;
+    padding: 10px;
+    margin: 2px;
+    font-family: 'Assistant', sans-serif;
+    font-style:thin;
+    font-size: 16px;
+}
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .grid-container {
+    display: inline-grid;
+    grid-template-rows: auto auto ;
+    padding: 10px;
+  }
+  
