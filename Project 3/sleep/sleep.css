@@ -181,7 +181,7 @@ body{
     height:100%;
     width: 100%;
     grid-row: 3/5;
-    background-color:#051934;
+    background-color:white;
     float:right;
   }
   .content video{
@@ -215,6 +215,12 @@ video::-webkit-media-controls {
   .grid-container {
     display: inline-grid;
     grid-template-rows: auto auto ;
-    padding: 10px;
+    grid-template-columns: auto auto ;
+
+  }
+  .grid-item img{
+    max-width:100%;
+    display: flex;
+
   }
   
