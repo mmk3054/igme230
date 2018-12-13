@@ -46,7 +46,7 @@ Your Formatting
 /*mobile*/
 
 #pagegrid {
-    background-color: lightblue;
+
     display: grid;
     height: 100vw;
     width:100%;
@@ -58,7 +58,7 @@ Your Formatting
 header {
    
     grid-area: header;
-    height: 75px;
+    height: 80px;
     background-color: lightblue;
 }
 #story{
@@ -99,7 +99,7 @@ footer {
         margin: 0 auto;
         width: 95%;
         height: 100vh;
-        background-color: lightblue;
+      
         
     }
         
