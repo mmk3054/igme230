@@ -1,0 +1,171 @@
+/*****************
+General Formatting
+******************/
+* {
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+html {
+    /* sets base font size for rem sizing */
+    font-size: 16px;
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+}
+
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+section, header, footer {
+    padding: .5rem;
+}
+
+.menu {
+    width: 100%;
+    padding: .5rem;
+    background-color: #aaa;
+    margin: 1px;
+}
+
+.submenu {
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    background-color: #eee;
+    padding-left: .5rem;
+}
+
+/**************
+Your Formatting
+***************/
+
+/*mobile*/
+
+#pagegrid {
+    background-color: lightblue;
+    display: grid;
+    height: 100vw;
+    width:100%;
+    grid-template-columns: 100%;
+    grid-template-areas: "header" "story" "source" "extracredit" "nav" "footer";
+    grid-template-rows: 80px auto auto auto auto 30px;
+}
+
+header {
+   
+    grid-area: header;
+    height: 75px;
+    background-color: lightblue;
+}
+#story{
+    grid-area: story;
+    height: auto;
+    background-color: lightcyan;
+}
+#source{
+    grid-area: source;
+    height: auto;
+    background-color: lightpink;
+}
+
+#extracredit {
+    grid-area: extracredit;
+    height: auto;
+    background-color: white;
+}
+nav{
+    grid-area: nav;
+    height: auto;
+    margin: 0px;
+}
+footer {
+    grid-area: footer;
+    height: 30px;
+    background-color: lightpink;
+}
+
+
+/* desktop*/
+
+@media screen and (min-width: 1100px) {
+    #pagegrid {
+ 
+        grid-template-rows: 80px 1fr 1fr 30px;
+        grid-template-columns: 200px 2fr 1fr;
+        width: 95%;
+        margin: 0 auto;
+        max-height: 100vh;
+        background-color: lightblue;
+        
+    }
+        
+    header {
+        background-color: lightblue;
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+    nav{
+        background-color: lavenderblush;
+        grid-column: 1/2;
+        grid-row: 2/4; 
+        height: auto;   
+    }
+    #story{
+        background-color: lightcyan;
+        grid-column: 2/3;
+        grid-row: 2/4;   
+        height: auto;  
+    }
+    #source{
+        background-color: lightsalmon;
+        grid-column: 3/4;
+        grid-row: 2/3;
+        height: auto;   
+    }
+    #extracredit{
+        background-color: white;
+        grid-column: 3/4;
+        grid-row: 3/4;
+        height: auto;    
+    }
+    footer {
+        height: 30px;
+        background-color: lightblue;
+        grid-column: 1/4;
+        grid-row: 4/5;
+    }
+
+
+}
+
+header,
+footer
+ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#extracredit{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+li:hover { 
+    background-color: lightpink;
+   
+  }
+li{
+    color: magenta;
+    cursor: pointer;
+}
+.submenu{
+    display:none;
+}
