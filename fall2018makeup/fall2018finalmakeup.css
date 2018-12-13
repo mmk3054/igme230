@@ -98,7 +98,7 @@ footer {
         grid-template-columns: 200px 2fr 1fr;
         margin: 0 auto;
         width: 95%;
-        min-height: 100vh;
+        max-height: 100vh;
         background-color: lightblue;
         
     }
